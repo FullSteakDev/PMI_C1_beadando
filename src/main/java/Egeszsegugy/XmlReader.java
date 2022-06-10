@@ -12,7 +12,7 @@ public class XmlReader {
 
     public static void main(String[] args) {
         ArrayList<Paciens> paciensek = readPaciensekFromXml("src/main/resources/paciensek.xml");
-        System.out.println(paciensek.size());
+        //System.out.println(paciensek.size());
         System.out.println(paciensek);
     }
 

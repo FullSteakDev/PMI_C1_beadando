@@ -7,10 +7,6 @@ public class Lakos {
     private Korzet korzet;
 
 
-    public Lakos(String name, String address, int birthYear) {
-        this(name, address, birthYear, Korzet.ELSO);
-    }
-
     public Lakos(String name, String address, int birthYear, Korzet korzet) {
         this.name = name;
         this.address = address;
