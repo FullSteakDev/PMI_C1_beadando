@@ -18,3 +18,13 @@ módosítani a név bevitelével lehet, de erre is rákérdez előtte a rendszer
 osztály alapján kéri be (név, születési év, lakcím, körzet, allergia, műtét). A születési évre korlátot
 raktam. Miután bevittük az adatokat, az _XmlReader_ osztály segítségével meg is tudjuk tekinteni magát 
 az xml fájlt, ami automatikusan létrejön az _XmlWriter_lezárása után, ha adtunk neki adatokat.
+
+English version:
+
+I created my assignment within the healthcare topic. More specifically, I attempted to simulate the primary care of a smaller town, focusing on the necessary data for a patient to enter primary healthcare.
+
+First, I created the 'Resident' class, in which I defined, among other things, the resident's name, date of birth, current address, and referred to the already created 'District' enum in this class as well. I generated getters and setters for all properties, as they will be needed in later processes.
+
+From the existing 'Resident' class, I derived the 'Patient' class. I expanded the existing properties with two more. In the future, it will be necessary to provide information about allergies and the patient's previous surgeries, in addition to those already defined. I generated getters and setters for these last two properties.
+
+Furthermore, the 'Patient' class forms the basis for writing XML. The program offers 5 options when running the XmlWriter. These include listing, adding, deleting, modifying patients, and the option to exit. Choosing the 'add' option prompts the system to request all the necessary data. Deletion and modification are possible by entering the name, but the system prompts for confirmation before proceeding. The data is collected based on the 'Patient' class (name, year of birth, address, district, allergy, surgery). I set a limit for the birth year. After entering the data, we can view the XML file itself using the 'XmlReader' class, which is automatically created after closing the '_XmlWriter' if we provided it with data.
